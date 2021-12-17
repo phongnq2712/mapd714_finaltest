@@ -16,6 +16,7 @@ class BMI
     private var m_age: Int
     private var m_height: Double
     private var m_weight: Double
+    private var m_bmi: Double
     private var m_category: String
     private var m_mode: String
     private var m_date: String
@@ -72,6 +73,20 @@ class BMI
         }
     }
     
+    public var bmi: Double
+    {
+        get
+        {
+            return m_bmi
+        }
+        
+        set(newBmi)
+        {
+            m_bmi = newBmi
+        }
+    }
+    
+    
     public var category: String
     {
         get
@@ -112,12 +127,13 @@ class BMI
     }
     
     // initializer (constructor)
-    init(name: String, age:Int = 1, height: Double = 0.0, weight: Double = 0.0, category: String = "", mode: String = "", date: String = "")
+    init(name: String, age:Int = 1, height: Double = 0.0, weight: Double = 0.0, bmi: Double = 0.0, category: String = "", mode: String = "", date: String = "")
     {
         m_name = name
         m_age = age
         m_height = height
         m_weight = weight
+        m_bmi = bmi
         m_category = category
         m_mode = mode
         m_date = date

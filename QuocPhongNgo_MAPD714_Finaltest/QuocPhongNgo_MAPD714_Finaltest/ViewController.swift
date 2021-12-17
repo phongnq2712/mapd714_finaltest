@@ -123,18 +123,19 @@ class ViewController: UIViewController {
                 let weight = tvWeight.text
                 let category = lblResult.text
                 self.ref.child(dateString).setValue([
-                    "name": name,
-                    "age": age,
-                    "height": height,
-                    "weight": weight,
-                    "category": category,
+                    "name": name!,
+                    "age": age!,
+                    "height": height!,
+                    "weight": weight!,
+                    "bmi": bmi,
+                    "category": category!,
                     "mode": mode,
                     "date": dateString
                 ])
                 DispatchQueue.main.async {
                     let newEntry = [self.tvName.text, self.tvAge.text, self.tvHeight.text, self.tvWeight.text]
                     UserDefaults.standard.setValue(newEntry, forKey: "")
-                    self.bmiScores.append(BMI(name: name!, age: Int(age!)!, height: Double(height!)!, weight: Double(weight!)!, category: category!, mode: mode, date: dateString))
+                    self.bmiScores.append(BMI(name: name!, age: Int(age!)!, height: Double(height!)!, weight: Double(weight!)!, bmi: Double(bmi), category: category!, mode: mode, date: dateString))
                 }
             }
         } else {
@@ -142,6 +143,26 @@ class ViewController: UIViewController {
         }
     }
     
+    /**
+     * Handling event for Done button
+     */
+    @IBAction func btnDoneClicked(_ sender: UIButton) {
+        if let vc = storyboard?.instantiateViewController(identifier: "BMITrackingViewController") as? BMITrackingViewController {
+//            vc.taskNameText = tasks[sender.tag].name
+//            vc.notesText = tasks[sender.tag].notes
+//            vc.isCompletedText = tasks[sender.tag].isCompleted
+//            vc.hasDueDateText = tasks[sender.tag].hasDueDate
+//
+//            if(!tasks[sender.tag].dueDate.isEmpty) {
+//                let dateFormatter = DateFormatter()
+//                dateFormatter.dateFormat = "YY/MM/dd"
+//                let dueDate = dateFormatter.date(from:tasks[sender.tag].dueDate)
+//                vc.dueDateText = dueDate
+//            }
+            
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
     /**
      * Change between Metric and Imperial mode
      */

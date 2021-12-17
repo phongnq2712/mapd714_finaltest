@@ -19,6 +19,8 @@
 		3157FA44276BD421009CE86A /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3157FA43276BD421009CE86A /* FirebaseDatabase */; };
 		3157FA46276BD421009CE86A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3157FA45276BD421009CE86A /* FirebaseFirestore */; };
 		3157FA49276BDC41009CE86A /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3157FA48276BDC41009CE86A /* BMI.swift */; };
+		3157FA4D276C571A009CE86A /* BMITrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3157FA4C276C571A009CE86A /* BMITrackingViewController.swift */; };
+		3157FA4F276CD8C0009CE86A /* BMITrackingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3157FA4E276CD8C0009CE86A /* BMITrackingTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		3157FA38276ABEB4009CE86A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3157FA3E276BD392009CE86A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3157FA48276BDC41009CE86A /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
+		3157FA4C276C571A009CE86A /* BMITrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMITrackingViewController.swift; sourceTree = "<group>"; };
+		3157FA4E276CD8C0009CE86A /* BMITrackingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMITrackingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 				3157FA38276ABEB4009CE86A /* Info.plist */,
 				3157FA3E276BD392009CE86A /* GoogleService-Info.plist */,
 				3157FA30276ABEB3009CE86A /* QuocPhongNgo_MAPD714_Finaltest.xcdatamodeld */,
+				3157FA4C276C571A009CE86A /* BMITrackingViewController.swift */,
+				3157FA4E276CD8C0009CE86A /* BMITrackingTableViewCell.swift */,
 			);
 			path = QuocPhongNgo_MAPD714_Finaltest;
 			sourceTree = "<group>";
@@ -173,6 +179,8 @@
 				3157FA2C276ABEB3009CE86A /* ViewController.swift in Sources */,
 				3157FA32276ABEB3009CE86A /* QuocPhongNgo_MAPD714_Finaltest.xcdatamodeld in Sources */,
 				3157FA28276ABEB3009CE86A /* AppDelegate.swift in Sources */,
+				3157FA4D276C571A009CE86A /* BMITrackingViewController.swift in Sources */,
+				3157FA4F276CD8C0009CE86A /* BMITrackingTableViewCell.swift in Sources */,
 				3157FA2A276ABEB3009CE86A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
