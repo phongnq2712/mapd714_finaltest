@@ -76,11 +76,17 @@
                                 <subviews>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Owd-Wg-eAr">
                                         <rect key="frame" x="0.0" y="0.0" width="356" height="40"/>
+                                        <connections>
+                                            <action selector="switchModeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="fV3-H2-wpQ"/>
+                                        </connections>
                                     </switch>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7a-9c-awq">
                                         <rect key="frame" x="0.0" y="70" width="354" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <state key="normal" title="Calculate"/>
+                                        <connections>
+                                            <action selector="calculateBMI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ufe-zu-AaJ"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huV-gD-vdG">
                                         <rect key="frame" x="0.0" y="140" width="354" height="40"/>
@@ -105,8 +111,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="lblResult" destination="huV-gD-vdG" id="eny-W1-8yX"/>
                         <outlet property="switchMode" destination="Owd-Wg-eAr" id="IHN-LU-ZhH"/>
+                        <outlet property="tvAge" destination="mI3-gx-Amd" id="aK8-hS-d6B"/>
                         <outlet property="tvHeight" destination="0cp-K9-9C7" id="IOW-dg-vAv"/>
+                        <outlet property="tvName" destination="czs-Kq-lHh" id="atf-iq-aNy"/>
                         <outlet property="tvWeight" destination="1Z2-BP-ggI" id="H5h-kH-tdZ"/>
                     </connections>
                 </viewController>
