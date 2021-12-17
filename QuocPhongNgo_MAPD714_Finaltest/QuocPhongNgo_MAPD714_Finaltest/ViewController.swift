@@ -148,17 +148,6 @@ class ViewController: UIViewController {
      */
     @IBAction func btnDoneClicked(_ sender: UIButton) {
         if let vc = storyboard?.instantiateViewController(identifier: "BMITrackingViewController") as? BMITrackingViewController {
-//            vc.taskNameText = tasks[sender.tag].name
-//            vc.notesText = tasks[sender.tag].notes
-//            vc.isCompletedText = tasks[sender.tag].isCompleted
-//            vc.hasDueDateText = tasks[sender.tag].hasDueDate
-//
-//            if(!tasks[sender.tag].dueDate.isEmpty) {
-//                let dateFormatter = DateFormatter()
-//                dateFormatter.dateFormat = "YY/MM/dd"
-//                let dueDate = dateFormatter.date(from:tasks[sender.tag].dueDate)
-//                vc.dueDateText = dueDate
-//            }
             
             navigationController?.pushViewController(vc, animated: true)
         }
